@@ -1,0 +1,77 @@
+<html>
+  <head></head>
+  <body>
+    <form action="../screen.html">
+      <h2>Ji-min Kim</h2>
+      <p>
+        <label for="profileName">Name:*</label>
+        <input type="text" id="profileName" />
+
+        <label for="profilePronouns">Pronouns</label>
+        <select name="pronouns" id="profilePronouns">
+          <option value="None" selected>None</option>
+          <option value="None">he/him/his</option>
+          <option value="None">she/her/her</option>
+          <option value="None">they/them/their</option>
+        </select>
+      </p>
+
+      <label for="profileTitle">Title: </label>
+      <input type="text" id="profileTitle" />
+
+      <h3>Contact</h3>
+      <p>
+        No registered services, you can add some on the
+        <a href="#">settings</a> page.
+      </p>
+
+      <h3>Biography</h3>
+      <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+      <textarea name="Biography" id="profileBiography" cols="55" rows="3">
+Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+    </textarea
+      >
+
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">YouTube</a> Links to an external site.</li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" value="YouTube" />
+              →
+            </td>
+            <td>
+              <input type="text" value="https://www.youtube.com/" />
+              <a href="#">Remove</a>
+            </td>
+          </tr>
+          <tr>
+            <td><button type="reset">Add another link</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button type="reset">Cancel</button>
+              <button type="submit">Save Profile</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="reset">Edit Profile</button>
+              <button type="submit">Cancel Editing</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

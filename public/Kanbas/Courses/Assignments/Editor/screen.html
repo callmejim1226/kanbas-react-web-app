@@ -10,15 +10,19 @@
                 <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
               </li>
               <li>
-                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                <a href="#">Dashboard</a>
               </li>
               <li>
                 <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
               </li>
               <li>
-                <a href="/Kanbas/Calendar/index.html">Calendar</a>
+                <a href="#">Calendar</a>
               </li>
-              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
             </ul>
           </td>
           <td valign="top">
@@ -27,125 +31,206 @@
                 <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
               </li>
               <li>
-                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+                <a href="#"> Modules</a>
               </li>
-              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
-              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li><a href="#"> Piazza</a></li>
+              <li>
+                <a href="#"> Zoom Meetings</a>
+              </li>
               <li>
                 <a href="/Kanbas/Courses/Assignments/screen.html">
                   Assignments</a
                 >
               </li>
+              <li>
+                <a href="#"> Quizzes</a>
+              </li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li><a href="#"> People</a></li>
+              <li>
+                <a href="#"> Panopto Video</a>
+              </li>
+              <li>
+                <a href="#"> Discussions</a>
+              </li>
+              <li>
+                <a href="#"> Announcements</a>
+              </li>
+              <li><a href="#"> Pages</a></li>
+              <li><a href="#"> Files</a></li>
+              <li>
+                <a href="#"> Rubrics</a>
+              </li>
+              <li>
+                <a href="#"> Outcomes</a>
+              </li>
+              <li>
+                <a href="#"> Collaborations</a>
+              </li>
+              <li>
+                <a href="#"> Syllabus</a>
+              </li>
+              <li>
+                <a href="#"> Settings</a>
+              </li>
             </ul>
           </td>
           <td valign="top">
-            <form action="/Kanbas/Courses/Assignments/screen.html">
-              <label>Assignment Name</label><br />
+            <form action="../screen.html">
+              <select>
+                <option>SpeedGrader</option>
+              </select>
+              <!-- Grey divider -->
+              <div
+                style="
+                  border-top: 3px solid #bbb;
+                  padding-bottom: 20px;
+                  margin-top: 20px;
+                "
+              ></div>
+
+              <h2>Assignment Name</h2>
+
               <input
                 type="text"
                 name="wd-assignment-name"
-                value="Assignment 1"
+                value="A1 - ENV + HTML"
               /><br />
 
-              <label>Assignment Description</label><br />
-              <textarea name="wd-assignment-description" rows="4" cols="50">
-              This is the first assignment for Web Dev.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum laudantium veniam optio, dicta quas voluptas facilis alias laborum voluptatibus maiores ducimus dolorem molestiae labore, harum rerum? Quis, quam vitae!
-            </textarea
+              <textarea
+                style="margin-top: 20px"
+                name="wd-assignment-description"
+                rows="2"
+                cols="30"
+              >
+        This is the assignment descrion.
+                    </textarea
               ><br />
-              <table>
-                <tbody>
-                  <tr>
-                    <td><label>Points</label></td>
-                    <td>
-                      <input type="number" value="100" min="0" max="100" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label>Assignment Group</label></td>
-                    <td>
-                      <select>
-                        <option>ASSIGNMENT</option>
-                        <option>QUIZ</option>
-                        <option>EXAM</option>
-                        <option>PROJECT</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td valign="top"><label>Submission Type</label></td>
-                    <td>
-                      <input
-                        type="checkbox"
-                        name="wd-submission-type"
-                        value="TEXT"
-                        checked
-                      />
-                      <label>Text Entry</label> <br />
-                      <input
-                        type="checkbox"
-                        name="wd-submission-type"
-                        value="WEBSITE"
-                      />
-                      <label>Website URL</label> <br />
-                      <input
-                        type="checkbox"
-                        name="wd-submission-type"
-                        value="MEDIA"
-                      />
-                      <label>Media Recordings</label> <br />
-                      <input
-                        type="checkbox"
-                        name="wd-submission-type"
-                        value="FILE"
-                        checked
-                      />
-                      <label>File Uploads</label> <br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label>Asign</label></td>
-                    <td>
-                      Due:<br />
-                      <input
-                        type="date"
-                        name="wd-assignment-due-date"
-                        min="2023-01-05"
-                        max="2023-01-23"
-                        value="2023-01-15"
-                      /><br />
-                      Available from:<br />
-                      <input
-                        type="date"
-                        name="wd-assignment-available-date"
-                        min="2023-01-05"
-                        max="2023-01-23"
-                        value="2023-01-15"
-                      /><br />
-                      Available unitl:<br />
-                      <input
-                        type="date"
-                        name="wd-assignment-available-until-date"
-                        min="2023-01-05"
-                        max="2023-01-23"
-                        value="2023-01-15"
-                      /><br />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><label></label></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><label></label></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><label></label></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Points</label><br />
+              <input type="number" value="100" min="0" max="100" /><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Assignment Group</label><br />
+              <select name="assignmentGroup">
+                <option value="assignment">ASSIGNMENT</option>
+                <option value="quiz">QUIZ</option>
+                <option value="exam">EXAM</option>
+                <option value="project">PROJECT</option></select
+              ><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Display Grade as</label><br />
+              <select name="GradeType">
+                <option value="percentage">Percentage</option>
+              </select>
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Submission Type</label><br />
+              <select name="SubmissionType">
+                <option value="online">Online</option>
+              </select>
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Online Entry Options</label><br />
+              <input
+                id="textEntry"
+                type="checkbox"
+                name="wd-submission-type"
+                value="TEXT"
+              />
+              <label for="textEntry">Text Entry</label> <br />
+              <input
+                id="url"
+                type="checkbox"
+                name="wd-submission-type"
+                value="WEBSITE"
+              />
+              <label for="url">Website URL</label> <br />
+              <input
+                id="media"
+                type="checkbox"
+                name="wd-submission-type"
+                value="MEDIA"
+              />
+              <label for="media">Media Recordings</label> <br />
+              <input
+                id="annotation"
+                type="checkbox"
+                name="wd-submission-type"
+                value="ANNOTATION"
+              />
+              <label for="annotation">Student Annotation</label> <br />
+              <input
+                id="file"
+                type="checkbox"
+                name="wd-submission-type"
+                value="FILE"
+              />
+              <label for="file">File Uploads</label> <br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <h5>Assign</h5>
+
+              <label>Assign to:</label><br />
+              <input
+                type="text"
+                name="wd-assignment-assginer"
+                value="Everyone"
+              /><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              <label>Due:</label><br />
+              <input
+                type="date"
+                name="wd-assignment-due-date"
+                min="2023-01-05"
+                max="2023-01-23"
+                value="2023-01-15"
+              /><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              Available from:<br />
+              <input
+                type="date"
+                name="wd-assignment-available-date"
+                min="2023-01-05"
+                max="2023-01-23"
+                value="2023-01-15"
+              /><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
+              Until:<br />
+              <input
+                type="date"
+                name="wd-assignment-available-until-date"
+                min="2023-01-05"
+                max="2023-01-23"
+                value="2023-01-15"
+              /><br />
+
+              <!-- Blank space box -->
+              <div style="height: 20px"></div>
+
               <button>Cancel</button>
               <button>Save</button>
             </form>
