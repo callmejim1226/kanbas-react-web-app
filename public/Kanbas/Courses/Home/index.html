@@ -1,106 +1,117 @@
 <html>
   <head>
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
     <title>Kanbas Courses Home</title>
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <button>Collapse All</button>
-            <button>View Progress</button>
-            <select name="option">
-              <option value="publish" selected>Publish All</option>
-            </select>
-            <button>Module</button>
-            <ul>
-              <li>
-                Week 0
-                <ul>
-                  <li>LEARNING OBJECTIVES</li>
-                  <ul>
-                    <li>Introduction to the course</li>
-                    <li>Learn what is Web Development</li>
-                    <li>Creating a development environment</li>
-                    <li>Getting started with the 1st assignment</li>
-                  </ul>
-                  <li>READING</li>
-                  <ul>
-                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                    <li>
-                      Full Stack Developer - Chapter 2 - Creating User
-                      Interfaces With HTML
-                    </li>
-                  </ul>
-                  <li>SLIDES</li>
-                  <ul>
-                    <li>
-                      <a href=""
-                        >Introduction to Web Development Links to an external
-                        site.</a
-                      >
-                    </li>
-                    <li>
-                      <a href=""
-                        >Creating an HTTP server with Node.js Links to an
-                        external site.</a
-                      >
-                    </li>
-
-                    <li>
-                      <a href=""
-                        >Creating a React Application Links to an external
-                        site.</a
-                      >
-                    </li>
-                  </ul>
-                </ul>
+    <div class="d-flex pt-3">
+      <div style="flex-grow: 1">
+        <div style="text-align: end">
+          <button class="btn btn-light status-button">Collapse All</button>
+          <button class="btn btn-light status-button">View Progress</button>
+          <select class="btn btn-light status-button">
+            <option>Publish All</option>
+            <option>Publish All Modules and Items</option>
+            <option>Publish Modules only</option>
+            <option>UnPublish All Modules</option>
+          </select>
+          <button class="btn btn-danger">+ Module</button>
+        </div>
+        <hr />
+        <ul class="list-group m-2 wd-modules pt-2">
+          <li class="list-group-item">
+            <div>
+              Week 0
+              <span class="float-end">
+                <button class="btn btn-success">Ok</button>
+                <button>+</button>
+                <button>x</button>
+              </span>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">&emsp; Introduction to the course</li>
+              <li class="list-group-item">
+                &emsp; Learn what is Web Development
               </li>
-              <li>
-                Week 1
-                <ul>
-                  <li>LEARNING OBJECTIVES</li>
-                  <ul>
-                    <li>Learn how to create user interface with HTML</li>
-                    <li>Keep working on assignment 1</li>
-                    <li>Deploy the assignment to Netlify</li>
-                  </ul>
-                  <li>READING</li>
-                  <ul>
-                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                    <li>
-                      Full Stack Developer - Chapter 2 - Creating User
-                      Interfaces With HTML
-                    </li>
-                  </ul>
-                </ul>
+              <li class="list-group-item">&emsp; Learning Objectives</li>
+              <li class="list-group-item">&emsp; Introduction to the course</li>
+              <li class="list-group-item">
+                &emsp; Learn what is Web Development
               </li>
             </ul>
-          </td>
-          <td valign="top">
-            <h3>Course Status</h3>
-            <br />
-            <button>Unpublish</button>
-            <button>Published</button>
-            <ul>
-              <li><a href="">Import Existing Content</a></li>
-              <li><a href="">Import From Commons</a></li>
-              <li><a href="">Choose Home Page</a></li>
-              <li><a href="">View Course Stream</a></li>
-              <li><a href="">New Announcement</a></li>
-              <li><a href="">New Analytics</a></li>
-              <li><a href="">View Course Notifications</a></li>
+          </li>
+          <li class="list-group-item">
+            <div>
+              Week 1
+              <span class="float-end">
+                <button class="btn btn-success">Ok</button>
+                <button>+</button>
+                <button>x</button>
+              </span>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">&emsp; Introduction to the course</li>
+              <li class="list-group-item">
+                &emsp; Learn what is Web Development
+              </li>
+              <li class="list-group-item">&emsp; Learning Objectives</li>
+              <li class="list-group-item">&emsp; Introduction to the course</li>
+              <li class="list-group-item">
+                &emsp; Learn what is Web Development
+              </li>
             </ul>
-            <h3>Coming Up</h3>
-            <a href="">View Calendar</a>
-            <ul>
-              <li><a href="">Lecture CS4550 on Sept 7</a></li>
-              <li><a href="">Lecture CS4550 on Sept 11</a></li>
-              <li><a href="">Lecture CS5660 on Sept 11</a></li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </li>
+        </ul>
+      </div>
+      <div class="flex-grow-0 me-2 d-none d-lg-block ps-4">
+        <h3>Course Status</h3>
+        <br />
+        <button class="btn btn-light status-button">Unpublish</button>
+        <button class="btn btn-success status-button">Published</button>
+        <div class="d-flex flex-column pt-3">
+          <button class="btn btn-light status-option-button">
+            Import Existing Content
+          </button>
+          <button class="btn btn-light status-option-button">
+            Import From Commons
+          </button>
+          <button class="btn btn-light status-option-button">
+            Choose Home Page
+          </button>
+          <button class="btn btn-light status-option-button">
+            Choose Home Page
+          </button>
+          <button class="btn btn-light status-option-button">
+            New Announcement
+          </button>
+          <button class="btn btn-light status-option-button">
+            New Analytics
+          </button>
+          <button class="btn btn-light status-option-button">
+            View Course Notifications
+          </button>
+        </div>
+        <div
+          class="d-flex flex-row mt-3"
+          style="justify-content: space-between"
+        >
+          <h5>Coming Up</h5>
+          <a href="#" style="font-size: small">View Calendar</a>
+        </div>
+        <hr />
+        <ul>
+          <li><a href="#">Lecture CS4550 on Sept 7</a></li>
+          <li><a href="#">Lecture CS4550 on Sept 11</a></li>
+          <li><a href="#">Lecture CS5660 on Sept 11</a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

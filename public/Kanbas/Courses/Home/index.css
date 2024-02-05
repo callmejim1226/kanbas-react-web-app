@@ -1,0 +1,32 @@
+.status-button {
+  border: 1px solid grey;
+}
+
+.status-option-button {
+  border: 1px solid grey;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/** Course Home Navigation **/
+
+.wd-course-navigations-container {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.wd-course-navigations-container > li > a {
+  display: flex;
+  flex-direction: row;
+  color: red;
+  text-decoration: none;
+  font-size: large;
+}
+
+.wd-course-icon-container {
+  padding-right: 10px;
+}
+
+.wd-course-nav-active > a {
+  font-weight: bold;
+}
