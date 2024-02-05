@@ -1,242 +1,267 @@
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link href="/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
-              </li>
-              <li>
-                <a href="#">Dashboard</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-              </li>
-              <li>
-                <a href="#">Calendar</a>
-              </li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-              </li>
-              <li>
-                <a href="#"> Modules</a>
-              </li>
-              <li><a href="#"> Piazza</a></li>
-              <li>
-                <a href="#"> Zoom Meetings</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
-              </li>
-              <li>
-                <a href="#"> Quizzes</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-              <li><a href="#"> People</a></li>
-              <li>
-                <a href="#"> Panopto Video</a>
-              </li>
-              <li>
-                <a href="#"> Discussions</a>
-              </li>
-              <li>
-                <a href="#"> Announcements</a>
-              </li>
-              <li><a href="#"> Pages</a></li>
-              <li><a href="#"> Files</a></li>
-              <li>
-                <a href="#"> Rubrics</a>
-              </li>
-              <li>
-                <a href="#"> Outcomes</a>
-              </li>
-              <li>
-                <a href="#"> Collaborations</a>
-              </li>
-              <li>
-                <a href="#"> Syllabus</a>
-              </li>
-              <li>
-                <a href="#"> Settings</a>
-              </li>
-            </ul>
-          </td>
-          <td valign="top">
-            <form action="../screen.html">
-              <select>
-                <option>SpeedGrader</option>
-              </select>
-              <!-- Grey divider -->
-              <div
-                style="
-                  border-top: 3px solid #bbb;
-                  padding-bottom: 20px;
-                  margin-top: 20px;
-                "
-              ></div>
+    <div class="d-flex">
+      <div class="d-none d-md-block">
+        <ul class="wd-kanbas-navigation">
+          <li>
+            <a href="/Kanbas/Account/Navigation/index.html">
+              <i class="fa-solid fa-user" style="color: white"></i>
+              Account</a
+            >
+          </li>
+          <li>
+            <a href="/Kanbas/Dashboard/screen.html">
+              <i class="fa fa-tachometer"></i> Dashboard
+            </a>
+          </li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/screen.html"
+              ><i class="fa-solid fa-book"></i>Courses</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-calendar"></i>Calendar</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-inbox"></i>Inbox</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-clock"></i>History</a>
+          </li>
+          <li>
+            <a href="#"> <i class="fa-solid fa-video"></i>Studio</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-creative-commons-nd"></i>Commons</a
+            >
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-question"></i><br />Help</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-none d-md-block">
+        <ul class="wd-navigation">
+          <li>
+            <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+          </li>
+          <li>
+            <a href="#"> Modules</a>
+          </li>
+          <li><a href="#"> Piazza</a></li>
+          <li>
+            <a href="#"> Zoom Meetings</a>
+          </li>
+          <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+          <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+          </li>
+          <li>
+            <a href="#"> Quizzes</a>
+          </li>
+          <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+          <li><a href="#"> People</a></li>
+          <li>
+            <a href="#"> Panopto Video</a>
+          </li>
+          <li>
+            <a href="#"> Discussions</a>
+          </li>
+          <li>
+            <a href="#"> Announcements</a>
+          </li>
+          <li><a href="#"> Pages</a></li>
+          <li><a href="#"> Files</a></li>
+          <li>
+            <a href="#"> Rubrics</a>
+          </li>
+          <li>
+            <a href="#"> Outcomes</a>
+          </li>
+          <li>
+            <a href="#"> Collaborations</a>
+          </li>
+          <li>
+            <a href="#"> Syllabus</a>
+          </li>
+          <li>
+            <a href="#"> Settings</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ps-5" style="flex-grow: 1">
+        <form action="../screen.html">
+          <select>
+            <option>SpeedGrader</option>
+          </select>
+          <!-- Grey divider -->
+          <div
+            style="
+              border-top: 3px solid #bbb;
+              padding-bottom: 20px;
+              margin-top: 20px;
+            "
+          ></div>
 
-              <h2>Assignment Name</h2>
+          <h2>Assignment Name</h2>
 
-              <input
-                type="text"
-                name="wd-assignment-name"
-                value="A1 - ENV + HTML"
-              /><br />
+          <input
+            type="text"
+            name="wd-assignment-name"
+            value="A1 - ENV + HTML"
+          /><br />
 
-              <textarea
-                style="margin-top: 20px"
-                name="wd-assignment-description"
-                rows="2"
-                cols="30"
-              >
-        This is the assignment descrion.
-                    </textarea
-              ><br />
+          <textarea
+            style="margin-top: 20px"
+            name="wd-assignment-description"
+            rows="2"
+            cols="30"
+          >
+    This is the assignment descrion.
+                </textarea
+          ><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Points</label><br />
-              <input type="number" value="100" min="0" max="100" /><br />
+          <label>Points</label><br />
+          <input type="number" value="100" min="0" max="100" /><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Assignment Group</label><br />
-              <select name="assignmentGroup">
-                <option value="assignment">ASSIGNMENT</option>
-                <option value="quiz">QUIZ</option>
-                <option value="exam">EXAM</option>
-                <option value="project">PROJECT</option></select
-              ><br />
+          <label>Assignment Group</label><br />
+          <select name="assignmentGroup">
+            <option value="assignment">ASSIGNMENT</option>
+            <option value="quiz">QUIZ</option>
+            <option value="exam">EXAM</option>
+            <option value="project">PROJECT</option></select
+          ><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Display Grade as</label><br />
-              <select name="GradeType">
-                <option value="percentage">Percentage</option>
-              </select>
+          <label>Display Grade as</label><br />
+          <select name="GradeType">
+            <option value="percentage">Percentage</option>
+          </select>
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Submission Type</label><br />
-              <select name="SubmissionType">
-                <option value="online">Online</option>
-              </select>
+          <label>Submission Type</label><br />
+          <select name="SubmissionType">
+            <option value="online">Online</option>
+          </select>
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Online Entry Options</label><br />
-              <input
-                id="textEntry"
-                type="checkbox"
-                name="wd-submission-type"
-                value="TEXT"
-              />
-              <label for="textEntry">Text Entry</label> <br />
-              <input
-                id="url"
-                type="checkbox"
-                name="wd-submission-type"
-                value="WEBSITE"
-              />
-              <label for="url">Website URL</label> <br />
-              <input
-                id="media"
-                type="checkbox"
-                name="wd-submission-type"
-                value="MEDIA"
-              />
-              <label for="media">Media Recordings</label> <br />
-              <input
-                id="annotation"
-                type="checkbox"
-                name="wd-submission-type"
-                value="ANNOTATION"
-              />
-              <label for="annotation">Student Annotation</label> <br />
-              <input
-                id="file"
-                type="checkbox"
-                name="wd-submission-type"
-                value="FILE"
-              />
-              <label for="file">File Uploads</label> <br />
+          <label>Online Entry Options</label><br />
+          <input
+            id="textEntry"
+            type="checkbox"
+            name="wd-submission-type"
+            value="TEXT"
+          />
+          <label for="textEntry">Text Entry</label> <br />
+          <input
+            id="url"
+            type="checkbox"
+            name="wd-submission-type"
+            value="WEBSITE"
+          />
+          <label for="url">Website URL</label> <br />
+          <input
+            id="media"
+            type="checkbox"
+            name="wd-submission-type"
+            value="MEDIA"
+          />
+          <label for="media">Media Recordings</label> <br />
+          <input
+            id="annotation"
+            type="checkbox"
+            name="wd-submission-type"
+            value="ANNOTATION"
+          />
+          <label for="annotation">Student Annotation</label> <br />
+          <input
+            id="file"
+            type="checkbox"
+            name="wd-submission-type"
+            value="FILE"
+          />
+          <label for="file">File Uploads</label> <br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <h5>Assign</h5>
+          <h5>Assign</h5>
 
-              <label>Assign to:</label><br />
-              <input
-                type="text"
-                name="wd-assignment-assginer"
-                value="Everyone"
-              /><br />
+          <label>Assign to:</label><br />
+          <input
+            type="text"
+            name="wd-assignment-assginer"
+            value="Everyone"
+          /><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <label>Due:</label><br />
-              <input
-                type="date"
-                name="wd-assignment-due-date"
-                min="2023-01-05"
-                max="2023-01-23"
-                value="2023-01-15"
-              /><br />
+          <label>Due:</label><br />
+          <input
+            type="date"
+            name="wd-assignment-due-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              Available from:<br />
-              <input
-                type="date"
-                name="wd-assignment-available-date"
-                min="2023-01-05"
-                max="2023-01-23"
-                value="2023-01-15"
-              /><br />
+          Available from:<br />
+          <input
+            type="date"
+            name="wd-assignment-available-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              Until:<br />
-              <input
-                type="date"
-                name="wd-assignment-available-until-date"
-                min="2023-01-05"
-                max="2023-01-23"
-                value="2023-01-15"
-              /><br />
+          Until:<br />
+          <input
+            type="date"
+            name="wd-assignment-available-until-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
 
-              <!-- Blank space box -->
-              <div style="height: 20px"></div>
+          <!-- Blank space box -->
+          <div style="height: 20px"></div>
 
-              <button>Cancel</button>
-              <button>Save</button>
-            </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <button>Cancel</button>
+          <button>Save</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
