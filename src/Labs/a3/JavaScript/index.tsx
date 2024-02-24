@@ -1,8 +1,12 @@
+import ArrayIndexAndLength from "./arrays/ArrayIndexAndLength";
 import MapFunction from "./arrays/MapFunction";
 import WorkingWithArrays from "./arrays/WorkingWithArrays";
 import IfElse from "./conditionals/IfElse";
+import TernaryOperator from "./conditionals/TernaryOperator";
 import ArrowFunctions from "./functions/ArrowFunctions";
 import ES5Functions from "./functions/ES5Functions";
+import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters";
+import ImpliedReturn from "./functions/ImpliedReturn";
 import House from "./json/House";
 import JsonStringify from "./json/JsonStringify";
 import Spreading from "./json/Spreading";
@@ -22,9 +26,13 @@ function JavaScript() {
       <WorkingWithArrays />
       <ArrowFunctions />
       <ES5Functions />
+      <ImpliedReturn />
+      <FunctionParenthesisAndParameters />
       <IfElse />
+      <TernaryOperator />
       <BooleanVariables />
       <VariableTypes />
+      <ArrayIndexAndLength />
       <VariablesAndConstants />
     </div>
   );
