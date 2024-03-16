@@ -38,6 +38,9 @@ function KanbasNavigation() {
             </Link>
           </li>
         ))}
+        <li>
+          <Link to="/Labs">Labs</Link>
+        </li>
       </ul>
     </div>
   );
