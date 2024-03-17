@@ -1,4 +1,4 @@
-import { courses } from "../../Kanbas/Database";
+import { classes } from "../../Kanbas/Database";
 import {
   Navigate,
   Route,
@@ -11,7 +11,7 @@ import { FaBars } from "react-icons/fa";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-function Courses() {
+function Courses({ courses }: { courses: any[] }) {
   const { courseId } = useParams();
   const { pathname } = useLocation();
   const currentPageRoute = pathname.slice(

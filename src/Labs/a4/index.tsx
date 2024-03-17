@@ -11,6 +11,10 @@ import CounterRedux from "./CounterRedux";
 import TodoList from "./Todo/TodoList";
 import Fibonacci from "./Fibonacci";
 import ObjectComponent from "./Object";
+import DateStateVariable from "./DateStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
+import ParentStateComponent from "./ParentStateComponent";
+import ReduxExamples from "./ReduxExamples";
 function Assignment4() {
   function sayHello() {
     alert("Hello");
@@ -27,6 +31,9 @@ function Assignment4() {
       <ObjectStateVariable count={count} />
       <StringStateVariables />
       <BooleanStateVariables />
+      <DateStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
       <CounterRedux />
       <Counter count={count} qwer={qwer} />
       <EventObject />
